@@ -7,3 +7,8 @@
 
 
 *.csv
+*.zip
+*.pkl
+__pycache__/
+outputs/models/
+.ipynb_checkpoints/

@@ -1,0 +1,90 @@
+shape: (668665, 15)
+target rate:
+Will_Buy_EV
+No     0.825355
+Yes    0.174645
+
+missing:
+id                             0
+Age                            0
+Annual_Income_USD              0
+Daily_Commute_km               0
+Number_of_Cars_Owned           0
+Charging_Stations_Near_Home    0
+Charging_Stations_Near_Work    0
+Environmental_Concern_Level    0
+Gender                         0
+City_Type                      0
+Current_Car_Type               0
+Home_Charging_Possible         0
+Subsidy_Available              0
+Range_Anxiety_Level            0
+Will_Buy_EV                    0
+
+describe:
+                                count unique    top    freq          mean            std      min       25%       50%       75%       max
+id                           668665.0    NaN    NaN     NaN      334332.0  193027.103211      0.0  167166.0  334332.0  501498.0  668664.0
+Age                          668665.0    NaN    NaN     NaN     47.039171      12.875448     25.0      36.0      47.0      58.0      69.0
+Annual_Income_USD            668665.0    NaN    NaN     NaN  84769.266989   28648.029042  30000.0   67376.0   84880.0  102753.0  188549.0
+Daily_Commute_km             668665.0    NaN    NaN     NaN     32.158298      18.730474      5.0      17.2      33.6      47.4      98.7
+Number_of_Cars_Owned         668665.0    NaN    NaN     NaN      1.712626       0.729275      1.0       1.0       2.0       2.0       4.0
+Charging_Stations_Near_Home  668665.0    NaN    NaN     NaN      4.960408       3.926843      0.0       2.0       4.0       7.0      14.0
+Charging_Stations_Near_Work  668665.0    NaN    NaN     NaN      7.176314       5.186627      0.0       3.0       6.0      10.0      19.0
+Environmental_Concern_Level  668665.0    NaN    NaN     NaN      2.935477       1.429119      1.0       2.0       3.0       4.0       5.0
+Gender                         668665      3   Male  367954           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+City_Type                      668665      3  Urban  289305           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+Current_Car_Type               668665      4  Sedan  303459           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+Home_Charging_Possible         668665      2    Yes  462677           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+Subsidy_Available              668665      2    Yes  419909           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+Range_Anxiety_Level            668665      3    Low  603972           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+Will_Buy_EV                    668665      2     No  551886           NaN            NaN      NaN       NaN       NaN       NaN       NaN
+
+corr with target:
+Environmental_Concern_Level    0.464079
+Annual_Income_USD              0.225729
+Number_of_Cars_Owned           0.003896
+Age                           -0.007450
+Charging_Stations_Near_Work   -0.012229
+Charging_Stations_Near_Home   -0.016353
+Daily_Commute_km              -0.045866
+
+=== Subsidy_Available ===
+Will_Buy_EV            No     Yes
+Subsidy_Available                
+No                 0.9942  0.0058
+Yes                0.7253  0.2747
+
+=== Range_Anxiety_Level ===
+Will_Buy_EV              No     Yes
+Range_Anxiety_Level                
+High                 0.9986  0.0014
+Low                  0.8110  0.1890
+Medium               0.9583  0.0417
+
+=== Home_Charging_Possible ===
+Will_Buy_EV                 No     Yes
+Home_Charging_Possible                
+No                      0.8729  0.1271
+Yes                     0.8042  0.1958
+
+=== City_Type ===
+Will_Buy_EV      No     Yes
+City_Type                  
+Rural        0.8066  0.1934
+Suburban     0.8191  0.1809
+Urban        0.8389  0.1611
+
+=== Current_Car_Type ===
+Will_Buy_EV           No     Yes
+Current_Car_Type                
+Hatchback         0.8257  0.1743
+SUV               0.8190  0.1810
+Sedan             0.8280  0.1720
+Truck             0.8436  0.1564
+
+=== Gender ===
+Will_Buy_EV      No     Yes
+Gender                     
+Female       0.8224  0.1776
+Male         0.8277  0.1723
+Other        0.8263  0.1737
